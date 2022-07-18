@@ -1,31 +1,27 @@
 package repet;
-interface nume
-         {
-      void nume ();
-         }
-         interface prenume
-         {
-      void prenume ();}
+class parinte
+{
+    public void  math()
+    {
+        System.out.println("met 1");
+    }
+}
+class copil extends parinte
+{
+    @Override
+    public void math() {
+        System.out.println("met 2");
+    }
+}
              public class main {
                  public static void main(String... ar) {
-                     id persoana1 = new id();
-                     persoana1.nume();
-                     persoana1.prenume();
+                 parinte p=new parinte();
+                 parinte c=new copil();
+                 p.math();
+                 c.math();
                  }
 
              }
-             class id implements nume,prenume
-             {
-     @Override
-     public void prenume() {
-         System.out.println("Tamara");
-     }
 
-     @Override
-     public void nume() {
-         System.out.println("cucereavu");
-     }
-
- }
 
 
