@@ -18,7 +18,7 @@ interface nume
              {
      @Override
      public void prenume() {
-         System.out.println("Dan");
+         System.out.println("Tamara");
      }
 
      @Override
